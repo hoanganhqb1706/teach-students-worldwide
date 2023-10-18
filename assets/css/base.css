@@ -1,0 +1,32 @@
+:root{
+    --blue-gray-900: rgba(15, 23, 42, 1);
+    --orange-600: rgba(234, 88, 12, 1);
+    --white: #fff;
+    --blue-600: rgba(37, 99, 235, 1);
+    --blue-gray-600: rgba(71, 85, 105, 1);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{    
+    text-rendering: optimizeSpeed;
+}
+.grid{
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
