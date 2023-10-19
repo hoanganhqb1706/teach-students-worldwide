@@ -4,6 +4,16 @@
     --white: #fff;
     --blue-600: rgba(37, 99, 235, 1);
     --blue-gray-600: rgba(71, 85, 105, 1);
+    --blue-gray-100:rgba(241, 245, 249, 1);
+    --blue-gray-400:rgba(148, 163, 184, 1);
+    --blue-gray-300:rgba(203, 213, 225, 1);
+    --purple-100:rgba(243, 232, 255, 1);
+    --purple-800:rgba(107, 33, 168, 1);
+    --blue-100:rgba(219, 234, 254, 1);
+    --blue-800:rgba(30, 64, 175, 1);
+    --green-100:rgba(220, 252, 231, 1);
+    --green-800:rgba(22, 101, 52, 1);
+    --yellow-400:hsla(48, 96%, 53%, 1);
 }
 *{
     padding: 0;
