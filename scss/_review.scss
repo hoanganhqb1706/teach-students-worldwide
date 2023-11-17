@@ -1,0 +1,110 @@
+.review{
+    padding: 80px;
+    margin: 0 auto;
+    &-header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 48px;
+        margin-bottom: 80px;
+    }
+    &-actions{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+    }
+    &-btn{
+        display: flex;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;  
+        border-radius: 100px;
+        border: 2px solid $orange-600;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.07), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);      
+    }
+    &-list{
+        width: 100%;
+        max-width: 1280px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-gap: 24px;
+        margin: 0 auto;
+        justify-items: center;
+    }
+    &-item{
+        width: 100%;
+        display: flex;
+        max-width: 412px;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 32px;
+        border-radius: 20px;
+        background: $white;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25), 0px 10px 15px -3px rgba(0, 0, 0, 0.25);
+        flex: 1 0 0;
+    }
+    &-text{
+        color: $black-000;
+    }
+    &-user{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-top: 16px;
+    }
+    &-info{
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+    }
+    &-name{
+        color: $black-000;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+    &-job{
+        color: $blue-gray-600;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+}
+
+
+@media screen and (max-width: 1023.98px) {
+    .review{
+        padding: 40px;
+        &-header{
+            text-align: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        &-list {
+        display: grid;
+        justify-content: flex-start;
+        grid-auto-columns: 100%;
+        grid-auto-flow: column;
+        grid-gap: 1.5rem;
+        overflow: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        -webkit-overflow-scrolling: touch;
+        scroll-padding: 1rem;
+        padding: 20px;
+        grid-template-columns: unset;
+        }
+        &-list::-webkit-scrollbar {
+          display: none;
+          width: 0;
+        }
+        &-list > *{
+          scroll-snap-align: start;
+        }
+    }
+}

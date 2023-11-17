@@ -1,0 +1,24 @@
+mixin tag(badge, title, desc, badgeColor, className)
+    .tag(class = className)
+        p.g-bagde.tag-badge(class = badgeColor)= badge
+        .tag-content
+            h4.g-heading.g-heading--small.tag-heading= title 
+            p.g-text.g-text--tiny.tag-text= desc 
+        .tag-link
+            a.btn.btn--blue.tag-btn(href='#!') Take Lesson
+
+mixin analystItem(icon, value, detail)
+    .analyst-item 
+        img(srcset= icon)
+        h1.g-heading.g-heading--big.analyst-heading= value 
+        p.g-text.g-text--big.analyst-text= detail
+
+mixin reviewItem(desc, avatar, name, job)
+    .review-item 
+        p.g-text.g-text--small.review-text= desc 
+        .review-user
+            img(srcset= avatar)
+            .review-info
+                span.review-name= name 
+                span.review-job= job
+

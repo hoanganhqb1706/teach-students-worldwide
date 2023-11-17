@@ -1,0 +1,31 @@
+.explore{
+    padding: 80px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    gap: 44px;
+    &-main img{
+        width: 100%;
+    }
+    &-content{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        flex: 1 0 0;
+    }
+    &-link{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 1279.98px) {
+    .explore{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .explore{
+        padding: 40px;
+    }
+}

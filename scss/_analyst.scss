@@ -1,0 +1,39 @@
+.analyst{
+    padding: 80px;
+    margin: 0 auto;
+    background-color: $blue-gray-900;
+    &-list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 80px;
+    }
+    &-item{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        text-align: center;
+        gap: 16px;
+    }
+    &-heading{
+        color: $yellow-400;
+    }
+    &-text{
+        color: $yellow-400;
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .analyst{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .analyst{
+        &-list{
+            flex-direction: column;
+        }
+    }
+}
